@@ -1,0 +1,23 @@
+version: 2
+sources:
+  - name: austin_bikeshare
+    database: bigquery-public-data
+    schema: austin_bikeshare
+    tables: 
+      - name: bikeshare_stations        
+      - name: bikeshare_trips
+
+  - name: baseball
+    database: bigquery-public-data
+    schema: baseball
+    tables: 
+      - name: games_post_wide        
+      - name: games_wide
+      - name: schedules
+  - name: covid19_aha
+    database: bigquery-public-data
+    schema: covid19_aha
+    tables: 
+      - name: hospital_beds        
+      - name: staffing
+    
