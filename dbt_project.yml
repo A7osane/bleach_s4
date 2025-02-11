@@ -32,8 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_test_projcet:
     # Config indicated by + and applies to all files under models/example/
-    austin_bikeshare:
+    staging:
+      +materialized: view
+    intermediate:
       +materialized: table
-    baseball: 
+    marts: 
       +materialized: table
-
