@@ -1,16 +1,14 @@
 WITH station_data AS (
     SELECT
-        station_id,
-        name AS station_name
-    FROM
-        {{ source('austin_bikeshare', 'bikeshare_stations') }}
+    *
+    FROM  {{ ref('stg_bikeshare_stations') }}
 ),
 trip_data AS (
     SELECT
         start_station_id,
         COUNT(*) AS total_trips
     FROM
-        {{ source('austin_bikeshare', 'bikeshare_trips') }}
+        {{ ref('stg_bikeshare_trips') }}
     GROUP BY
         start_station_id
 )
@@ -24,5 +22,3 @@ LEFT JOIN
     trip_data t
 ON
     s.station_id = t.start_station_id
-ORDER BY
-    total_trips DESC
