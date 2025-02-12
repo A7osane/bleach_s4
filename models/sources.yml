@@ -14,10 +14,5 @@ sources:
       - name: games_post_wide        
       - name: games_wide
       - name: schedules
-  - name: covid19_aha
-    database: bigquery-public-data
-    schema: covid19_aha
-    tables: 
-      - name: hospital_beds        
-      - name: staffing
+ 
     
