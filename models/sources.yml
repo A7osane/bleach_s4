@@ -14,5 +14,11 @@ sources:
       - name: games_post_wide        
       - name: games_wide
       - name: schedules
+
+  - name: basketball
+    database: bigquery-public-data
+    schema: ncaa_basketball
+    tables: 
+      - name: mbb_historical_tournament_games       
+      - name: mbb_historical_teams_games
  
-    
