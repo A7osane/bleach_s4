@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: top_10_total_points_by_team_by_season
+    config:
+      enabled: true
+      tags: basketball
+      full_refresh: true
