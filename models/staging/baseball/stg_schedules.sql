@@ -1,0 +1,19 @@
+SELECT
+    gameId,
+    gameNumber,
+    seasonId,
+    year,
+    type,
+    dayNight,
+    duration,
+    duration_minutes,
+    homeTeamId,
+    homeTeamName,
+    awayTeamId,
+    awayTeamName,
+    startTime,
+    attendance,
+    status,
+    created
+FROM
+    {{ source('baseball', 'schedules') }}
