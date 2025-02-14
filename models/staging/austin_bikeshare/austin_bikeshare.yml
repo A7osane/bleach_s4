@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - [name](/reference/resource-properties/model_name): <stg_bikeshare_stations>
+    [description](/reference/resource-properties/description): <this contains a list of all stations for the bikeshare dataset>
+    [columns](/reference/resource-properties/columns):
+      - name: <station_id> # required
+        [description](/reference/resource-properties/description): <this columns includes the unique station ids>
+        tags: ["primary_key", "identifier"]
+        tests:
+          - unique
+          - not_null
+
+  - [name](/reference/resource-properties/model_name): <stg_bikeshare_trips>
+    [description](/reference/resource-properties/description): <this contains a info regarding bikeshare data>
+    [columns](/reference/resource-properties/columns):
+      - name: <start_station_id> # required
+        [description](/reference/resource-properties/description): <this columns includes the unique start station ids>
+
+
+
+
