@@ -19,4 +19,3 @@ SELECT
     opp_points_game
 FROM
     {{ source('basketball', 'mbb_historical_teams_games') }}
-WHERE season >= 2000

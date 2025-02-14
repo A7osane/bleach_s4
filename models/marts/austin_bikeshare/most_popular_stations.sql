@@ -1,3 +1,8 @@
+{{ config(
+    tags=["top trips"]
+) }}
+
+
 SELECT
     station_id,
     station_name,
