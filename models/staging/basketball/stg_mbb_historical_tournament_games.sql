@@ -28,4 +28,3 @@ SELECT
     academic_year
 FROM
     {{ source('basketball', 'mbb_historical_tournament_games') }}
-WHERE season >= 2000

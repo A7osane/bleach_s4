@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_bikeshare_trips_summary
+    description: this contains a summary of the bikeshare data
+    config:
+      tags: ['bike']
+    docs:
+      show: true
+      node_color: purple # Use name (such as node_color: purple) or hex code with quotes (such as node_color: "#cd7f32")
+    columns:
+      - name: s.station_id # required
+        description: includes station id data
+      - name: s.station_name
+        description: includes station name data

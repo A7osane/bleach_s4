@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: most_popular_stations
+    description: this table contains the most popular stations
+    docs:
+      show: true
+      node_color: purple # Use name (such as node_color: purple) or hex code with quotes (such as node_color: "#cd7f32")
+    columns:
+      - name: station_id # required
+        description: includes station id data
+      - name: station_name
+        description: includes station name data
+      - name: total_trips
+        description: includes the total trips taken
