@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: most_popular_games_by_city
+    description: this contains some game stuff
+    columns:
+      - name: venue_city
+        tests:
+          - contains_abc:
+              config:
+                severity: warn

@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_incidents_08
+    description: this contains a list of incendents in austin for 2008
+    columns:
+      - name: unique_key
+        description: this columns includes the unique keys
+      - name: date
+        description: this columns incldues dates of incidents
+  - name: stg_incidents_09
+    description: this contains aa list of incidents in austin for 2009
+    columns:
+      - name: unique_key
+        description: this columns includes the unique keys
+      - name: date
+        description: this columns incldues dates of incidents
+

@@ -14,6 +14,7 @@ sources:
       - name: games_post_wide        
       - name: games_wide
       - name: schedules
+      - name: game_metrics
 
   - name: basketball
     database: bigquery-public-data
@@ -21,4 +22,27 @@ sources:
     tables: 
       - name: mbb_historical_tournament_games       
       - name: mbb_historical_teams_games
- 
+
+  - name: austin_incidents
+    database: bigquery-public-data
+    schema: austin_incidents
+    tables: 
+      - name: incidents_2008      
+      - name: incidents_2009
+
+  - name: faa
+    database: bigquery-public-data
+    schema: faa
+    tables: 
+      - name: us_airports       
+
+  - name: worldpop
+    database: bigquery-public-data
+    schema: worldpop
+    tables: 
+      - name: population_grid_1km 
+
+  - name: countries_by_continent
+    schema: countries_by_continent
+
+  

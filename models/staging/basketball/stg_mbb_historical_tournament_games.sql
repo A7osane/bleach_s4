@@ -28,3 +28,6 @@ SELECT
     academic_year
 FROM
     {{ source('basketball', 'mbb_historical_tournament_games') }}
+WHERE season >= {{ var("start_season") }}
+AND win_region in {{ var("winning_region") }}
+AND win_name in {{ var("winning_name") }}

@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_pop_grid
+    description: a population density categorization in 1km squared 
+    config:
+      tags: ['Dense']

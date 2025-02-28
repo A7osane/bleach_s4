@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+
+  - name: worldpop_dashboard
+    label: worldpop metrics
+    type: dashboard
+    maturity: high
+    url: https://www.worldometers.info/
+    description: >
+      tracking world population numbers through births, deaths, and other metrics
+
+    depends_on:
+      - ref('stg_pop_grid')
+      - ref('int_pop_grid')
+
+    owner:
+      name: Ahmed Hussein
+      email: ahmed.hussein@badal.io

@@ -1,0 +1,20 @@
+version: 2
+
+exposures:
+
+  - name: faa_metrics
+    label: weekly faa reports
+    type: analysis
+    maturity: high
+    url: https://www.faa.gov/
+    description: >
+      This analysis is ued for the FAA operations
+
+    depends_on:
+      - ref('stg_us_airports')
+      - ref('countries_by_continent')
+
+
+    owner:
+      name: Ahmed Hussein
+      email: ahmed.hussein@badal.io

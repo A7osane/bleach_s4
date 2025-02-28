@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: mart_us_airports
+    description: a list of airports in USA with description 
+    meta:
+      owner: "@Ahmed"
+      user_code: true
+      data_owner: bi_team
+      model_maturity: prod

@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_game_metrics
+    description: this contains some game metrics
+    columns:
+      - name: year
+        tests:
+          - is_even:
+              config:
+                severity: warn
+  - name: stg_games_post_wide
+    description: this contains some stuff
+    columns:
+      - name: year
+        tests:
+          - is_even:
+              config:
+                severity: warn
+  - name: stg_games_wide
+    description: this contains some more stuff
+    columns:
+      - name: year
+        tests:
+          - is_even:
+              config:
+                severity: warn
+  - name: stg_schedules
+    description: this contains some more wait for it more stuff
+    columns:
+      - name: year
+        tests:
+          - is_even:
+              config:
+                severity: warn
+

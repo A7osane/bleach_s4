@@ -1,0 +1,9 @@
+snapshots:
+  - name: countries_snapshot
+    relation: ref('mart_us_airports')
+    config:
+      unique_key: object_id
+      strategy: check
+      check_cols: all
+
+      

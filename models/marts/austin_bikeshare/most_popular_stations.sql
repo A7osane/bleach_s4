@@ -1,5 +1,5 @@
 {{ config(
-    tags=["top trips"]
+    tags=["toptrips"]
 ) }}
 
 

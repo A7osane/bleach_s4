@@ -1,0 +1,14 @@
+snapshots:
+  - name: orders_status_snapshots
+    relation: ref('orders_status')
+    config:
+      unique_key: id
+      strategy: check
+      check_cols: all
+      
+
+ 
+      
+
+
+      

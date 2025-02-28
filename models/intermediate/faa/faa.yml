@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_us_airports
+    description: a list of airports in USA with description 
+    config:
+      tags: ['plane']

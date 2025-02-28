@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_mbb_historical_tournament_games
+    description: this is the staging model for historical tournament games
+    columns:
+      - name: win_team_id
+        tests:
+          - unique:
+              config:
+                severity: warn
+          - not_null
+      - name: win_region
+        tests:
+          - accepted_values:
+              values: ['W', 'X', 'Y', 'Z']
+
+  - name: stg_mbb_historical_teams_games
+    description: this is the staging model for historical teams games
+    columns:
+      - name: alias
+        tests:
+          - dbt_utils.not_empty_string:
+              config:
+                severity: warn
+    

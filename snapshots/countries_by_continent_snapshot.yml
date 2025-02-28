@@ -1,0 +1,14 @@
+snapshots:
+  - name: countries_by_continent_snapshot
+    relation: ref('countries_by_continent')
+    config:
+      unique_key: Country
+      strategy: 'check'
+      check_cols: all
+      hard_deletes: 'new_record'
+
+ 
+      
+
+
+      
