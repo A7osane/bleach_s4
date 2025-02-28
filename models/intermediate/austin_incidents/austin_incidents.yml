@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: int_incidents_08_09
+    description: '{{ doc("charge_description") }}'
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "incident_count_2008 + incident_count_2009 = total_count_08_09"
+      - dbt_utils.expression_is_true:
+          expression: "total_count_08_09 >= 1"
+
+    columns:
+      - name: descript
+        description: this is an example description
+        
+
+
+      

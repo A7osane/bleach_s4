@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: top_10_total_points_by_team_by_season
+    description: this contains some game metrics
+    meta:
+      owner: "@Ahmed"
+    columns:
+      - name: team_name
+        tests:
+          - dbt_utils.at_least_one
